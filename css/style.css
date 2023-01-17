@@ -1,0 +1,74 @@
+*{
+    margin: 0;          /*regra reset - retira a margem de todo o documento / para criar a regra deve-se ultilizar o caractere (*).*/
+    padding: 0;
+}
+
+
+html, body {
+    height: 100%; /*define o body e html para 100% do tamanho da página*/
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: white; /*cor do texto para toda a página*/
+    background: rgb(54,77,204);
+    background: linear-gradient(180deg, rgba(54,77,204,1) 0%, rgba(19,35,124,1) 100%); /*cria um background degrade na página (ultilizar o gerador de degrade https://cssgradient.io/)*/
+}
+
+.avatar{
+    width: 80px;
+    border-radius: 50px;
+    border: 3px solid white; /*adiciona borda*/
+    box-shadow: 0 0 20px white; /*adiciona sombra*/
+}
+
+h1{
+    font-family: 'Architects Daughter', cursive; /*altera a fonte somente no texto selecionado ex.H1*/
+    font-weight: 100; /*altera a largura da fonte*/
+    font-size: 24px; /*altera o temanho da fonte*/
+    margin-bottom: 2px;
+}
+
+h2{
+    font-size: 16px;
+}
+
+.profile {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social{
+    display: flex;    /*transforma em flexbox, tudo dentro dele fica lado a lado*/
+    justify-content: space-around; /*"justifique esse conteúdo ao centro / propriedade do flexbox para alinhar as imagens / space-arround = espaçamento ao redor de todos*/
+    list-style: none; /*remove a "bolinha" da lista*/
+    margin: 20px 0px;
+}
+
+.social img{   /*.social = classe + img = o que eu quero selecionar dentro da classe "social"*/
+    width: 33px;
+}
+
+.links-list{
+    list-style: none;    
+}
+
+.links-list li{
+    margin: 10px 20px
+}
+
+.links-list li a { /*seleciona especificamente a lista dentro da classe (LI = LISTA - A = REFERÊNCIA*/
+    display: block; /*transforma o texto em bloco*/
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 4px;
+    text-decoration: none; /*remove a linha do texo "link".*/
+    color: rgb(54,77,204);
+    font-weight: bold;
+}       
+
+.links-list li a span{
+    color: gray;
+    display: block;
+    margin-top: 10px;
+}
